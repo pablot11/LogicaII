@@ -1,0 +1,14 @@
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\bin\Debug\pryTorresLogicaII.exe.config
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\bin\Debug\pryTorresLogicaII.exe
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\bin\Debug\pryTorresLogicaII.pdb
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.csproj.AssemblyReference.cache
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.csproj.SuggestedBindingRedirects.cache
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.frmCarga.resources
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.frmCargaTornillo.resources
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.frmCargaTuercas.resources
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.Properties.Resources.resources
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.csproj.GenerateResource.cache
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.csproj.CoreCompileInputs.cache
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.exe
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.pdb
+C:\Users\PABLO\OneDrive\Desktop\pryTorresLogicaII\obj\Debug\pryTorresLogicaII.frmMain.resources
