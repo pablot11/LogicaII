@@ -1,0 +1,91 @@
+Inicio AdeDRegistro
+	campo fecha tipo date[dd:mm:aaaa] CP
+	campo documento tipo numerico[11] CP2
+	campo t.documento tipo numerico[1]
+	campo nombre tipo texto[35] CP3
+	campo domicilio tipo texto[30]
+	campo barrio tipo numerico[3]
+	campo localidad tipo numerico[4]
+	campo provincia tipo numerico[4]
+	campo num_socio tipo numerico[8]
+	campo tipo_socio tipo numerico[1]
+Fin AdeDRegistro
+
+1)Ingresara una fecha y debera mostrar en una grilla el documento, el tipo de documento, el nombre, el barrio, la localidad y el num de socio
+
+2) seleccionara en una lista desplegable un tipo de socio y debera cargar en el vector A el num de socio que coincida con esa seleccion 
+	y en el vector B la localidad que corresponda a ese num de socio
+	
+3) Recibira la matriz A con num de socios, usted debera mostrarlo en una grilla a que barrio, locadlidad y provincia pertenecen
+4) ingresara un numro de socio y debera mostrar todos los datos referentes al mismo
+5) Indicara la cantidad de socios, los agruopara por tipo de socios indicando a que barrio, localidad y pronvincia pertenecen	
+	
+	
+
+	varFecha tipodate = txtFecha
+	variable FG tiponumerica = 1
+	grlMostrar [0][1]= "Documento"	
+	grlMostrar [0][2]= "Tipo Documento"	
+	grlMostrar [0][3]= "Nombre"	
+	grlMostrar [0][4]= "Barrio"	
+	grlMostrar [0][5]= "Localidad"
+	grlMostrar [0][6]= "Provincia"	
+	
+Inicio Procedimiento	
+	Abrir AdeDRegistro
+	Leer AdeDRegistro
+	Mientras (not AdeDRegistro.EOF y AdeDRegistro.Fecha <> varFecha)
+		Leer AdeDRegistro
+	Fin Mientras
+	Mientras (not AdeDRegistro.EOF y AdeDRegistro.Fecha == varFecha)
+		grlMostrar[FG,1] = AdeDRegistro.Documento
+		grlMostrar[FG,3] = AdeDRegistro.Nombre
+		grlMostrar[FG,7] = AdeDRegistro.NumeroSocio
+		Abrir AdeDTipoDocumento
+		Leer AdeDTipoDocumento
+		Mientras (AdeDRegistro.TipoDocumento <> AdeDTipoDocumento.Codigo)
+			Leer AdeDTipoDocumento
+		Fin Mientras
+		grlMostrar[FG][2] = AdeDTipoDocumento.nombre
+		Cerrar AdeDTipoDocumento
+		
+		Abrir AdeDBarrio
+		Leer AdeDBarrio
+		Mientras ( y AdeDRegistro.Barrio <> AdeDBarrio.Codigo)
+			Leer AdeDBarrio
+		Fin Mientras
+		grlMostrar[FG][4] = AdeDBarrio.Detalle
+		Cerrar AdeDBarrio
+		
+		Abrir AdeDLocalidad
+		Leer AdeDLocalidad
+		Mientras ( AdeDRegistro.Localidad <> AdeDLocalidad.Codigo)
+			Leer AdeDTipoDocumento
+		Fin Mientras
+		grlMostrar[FG][5] = AdeDLocalidad.Detalle
+		Cerrar AdeDLocalidad
+		
+		
+		Abrir AdeDProvincia
+		Leer AdeDProvincia
+		Mientras (AdeDRegistro.TipoDocumento <> AdeDTipoDocumento.Codigo)
+			Leer AdeDTipoDocumento
+		Fin Mientras
+		grlMostrar = AdeDTipoDocumento.nombre
+		Cerrar AdeDRegistro
+	
+	
+	
+
+
+
+
+Fin procedimiento
+	
+	
+	
+	
+	
+	
+	
+	
